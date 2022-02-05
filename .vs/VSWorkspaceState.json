@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\recipes",
+    "\\src\\app\\recipes\\recipe-detail"
   ],
-  "SelectedNode": "\\src\\app\\header",
+  "SelectedNode": "\\src\\app\\recipes\\recipes.component.css",
   "PreviewInSolutionExplorer": false
 }
