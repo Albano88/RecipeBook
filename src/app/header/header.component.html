@@ -1,24 +1,50 @@
 
+
+
+
+
+
+
 <!--classe di bootstrap che ci permette di inserire una barra di navigazione -->
 <nav class="navbar navbar-default">
   <!--classe di contenitore che ci da la migliore visualizzazione con boot-->
   <div class="container-fluid">
     <!--classe navbar con un hash di ancoraggio che successibvamente verrra sostituito da un percorso-->
     <div class="navbar-header">
+      <!--<a routerLink="/" class="navbar-brand">Recipe Book</a>-->
       <a href="#" class="navbar-brand">Recipe Book</a>
-
     </div>
-
+    <!-- Ottimizzazione per schermi più piccoli
+    <div class="collapse navbar-collapse">
+          <div class="navbar-header">
+    <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+    <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+    </button>
+    <a routerLink="/" class="navbar-brand">Recipe Book</a>
+  </div>
+  <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+          -->
     <!--creazione di una lista ordinata di classi css con hash di ancoraggio-->
+    <!--PROBLEMI con collapse-->
     <div class="collaps navbar-collaps">
       <ul class="nav navbar-nav">
         <!--bottoni-->
-        <li><a class="btn btn-primary" data-toggle="collapse"
-               role="button" aria-expanded="false" aria-controls="coll" href="#">Recipes</a></li>
-        <li><a class="btn btn-primary" data-toggle="collapse"
-               role="button" aria-expanded="false" aria-controls="coll" href="#">Shopping List</a></li>
-      </ul>
 
+        <li>
+          <a class="btn btn-primary" data-toggle="collapse"
+             role="button" aria-expanded="false" aria-controls="coll" href="#">Recipes</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" data-toggle="collapse"
+             role="button" aria-expanded="false" aria-controls="coll" href="#">Shopping List</a>
+        </li>
+
+
+
+
+
+
+      </ul>
       <!--creazione lista non ordinata a destra con menu a tendina-->
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -27,11 +53,9 @@
             <li><a href="#">Save Data</a></li>
             <li><a href="#">Fetch Data</a></li>
           </ul>
-
         </li>
       </ul>
     </div>
-
 
   </div>
 
