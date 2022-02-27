@@ -3,8 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\recipes"
+    "\\src\\app\\header",
+    "\\src\\app\\recipes",
+    "\\src\\app\\recipes\\recipe-detail",
+    "\\src\\app\\recipes\\recipe-item",
+    "\\src\\app\\recipes\\recipe-list"
   ],
-  "SelectedNode": "\\src\\styles.scss",
+  "SelectedNode": "\\src\\app\\recipes\\recipes.component.ts",
   "PreviewInSolutionExplorer": false
 }
