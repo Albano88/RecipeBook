@@ -1,16 +1,13 @@
 
-
-
-
-
-
-
 <!--classe di bootstrap che ci permette di inserire una barra di navigazione -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!--classe di contenitore che ci da la migliore visualizzazione con boot-->
   <div class="container-fluid">
     <a class="navbar-brand" href="#">RecipeBook</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" 
+    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" 
+    aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,8 +18,10 @@
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="onSelect('shopping-list')">ShoppingList</a>
         </li>
+        <!--appDropdown direttiva menù a tendina qui già funziona-->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Manage
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
