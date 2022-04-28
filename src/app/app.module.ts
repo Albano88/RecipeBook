@@ -17,6 +17,8 @@ import { ShoppoingListService } from './shopping-list/shopping-list.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthService } from './auth.sevice';
 import { AuthGuard } from './auth-guard.service';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 
@@ -30,7 +32,9 @@ import { AuthGuard } from './auth-guard.service';
     RecipeDetailComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ export class RecipeService {
 
 
      private recipes: Recipe[] = [
-        new Recipe('A Test Recipe', 'This is simply test',
+        new Recipe('A Test Recipe','This is simply test',
         'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',
         [
             new Ingredient('Meat',1),
@@ -31,9 +31,13 @@ export class RecipeService {
           
       }
 
+      getRecipes(){
+        return this.recipes.slice();
+      }
+
       
-      public getRecipe() {
-          return this.recipes.slice();
+     getRecipe(id: number) {
+          return this.recipes[id];
       }
 
       addIngredientsToSL(ingredients: Ingredient[]){
